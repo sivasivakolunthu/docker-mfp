@@ -60,7 +60,7 @@ RUN git clone https://github.com/TAKEALOT/nodervisor.git /opt/nodervisor \
     && npm install
 
 # Install Mobile First Platform
-ENV MFP_VERSION 7.0.0
+ENV MFP_VERSION 7.1.0
 RUN MFP_URL="https://public.dhe.ibm.com/ibmdl/export/pub/software/products/en/MobileFirstPlatform/mobilefirst_cli_installer_$MFP_VERSION.zip" \
     && wget -q $MFP_URL -U UA-IBM-WebSphere-Liberty-Docker -O "/tmp/mobilefirst_cli_installer_$MFP_VERSION.zip" \
     && unzip -q "/tmp/mobilefirst_cli_installer_$MFP_VERSION.zip" -d /tmp/mfp \
